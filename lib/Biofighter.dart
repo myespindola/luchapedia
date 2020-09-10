@@ -41,6 +41,7 @@ class Biofighter extends StatelessWidget {
               Expanded(
                 child: Container(),
               ),
+              listaLuchadores(context),
             ],
           )
         ],
@@ -121,6 +122,196 @@ class Biofighter extends StatelessWidget {
                       ],
                     ),
                   ],
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget listaLuchadores(BuildContext context) {
+    return Center(
+      child: Container(
+        height: 120,
+        child: ListView(
+          scrollDirection: Axis.horizontal,
+          children: [
+            Container(
+              margin: EdgeInsets.all(5),
+              width: 100,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("assets/Luchadores/elSanto.jpg"),
+                  fit: BoxFit.cover,
+                ),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Container(
+                margin: EdgeInsets.only(top: 85, left: 2),
+                child: Text(
+                  'El Santo',
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.all(5),
+              width: 100,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("assets/Luchadores/Angelica.png"),
+                  fit: BoxFit.cover,
+                ),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Container(
+                margin: EdgeInsets.only(top: 85, left: 2),
+                child: Text(
+                  'Angelica',
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.all(5),
+              width: 100,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("assets/Luchadores/blueDemon.jpg"),
+                  fit: BoxFit.cover,
+                ),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Container(
+                margin: EdgeInsets.only(top: 85, left: 2),
+                child: Text(
+                  'BlueDemon',
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.all(5),
+              width: 100,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("assets/Luchadores/ladyShani.png"),
+                  fit: BoxFit.cover,
+                ),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Container(
+                margin: EdgeInsets.only(top: 85, left: 2),
+                child: Text(
+                  'LadyShani',
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.all(5),
+              width: 100,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("assets/Luchadores/historico.jpg"),
+                  fit: BoxFit.cover,
+                ),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Container(
+                margin: EdgeInsets.only(top: 85, left: 2),
+                child: Text(
+                  'Historico',
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.all(5),
+              width: 100,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("assets/Luchadores/diosaQuetzal.png"),
+                  fit: BoxFit.cover,
+                ),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Container(
+                margin: EdgeInsets.only(top: 65, left: 2),
+                child: Text(
+                  'Diosa Quetzal',
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.all(5),
+              width: 100,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("assets/Luchadores/frijolito.jpg"),
+                  fit: BoxFit.cover,
+                ),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Container(
+                margin: EdgeInsets.only(top: 85, left: 2),
+                child: Text(
+                  'Frijolito',
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.all(5),
+              width: 100,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("assets/Luchadores/masLuchadores.png"),
+                  fit: BoxFit.cover,
+                ),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Container(
+                child: IconButton(
+                  icon: Icon(
+                    Icons.add_circle_outline,
+                    color: Colors.lightBlueAccent[400],
+                    size: 80,
+                  ),
+                  onPressed: () {
+                    print("Hola");
+                  },
                 ),
               ),
             ),
