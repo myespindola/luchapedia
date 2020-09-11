@@ -71,9 +71,16 @@ class Biofighter extends StatelessWidget {
         width: 350,
         child: Stack(
           children: [
-            Image(
-              width: 350,
-              image: NetworkImage(urlKemonito),
+            Positioned(
+              top: 5,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(20),
+                child: FadeInImage.assetNetwork(
+                  placeholder: "assets/Gifs/loading.gif",
+                  image: urlKemonito,
+                  width: 350,
+                ),
+              ),
             ),
             Positioned(
               top: 155,
