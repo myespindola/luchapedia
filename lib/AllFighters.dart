@@ -19,6 +19,12 @@ class AllFighters extends StatelessWidget {
       "https://pm1.narvii.com/6348/9354bb6b1622daa3ddfc4459b84564b016d8e11f_hq.jpg";
   final String urlLadyFlammer =
       "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSZjfVC9suHONXvvH31kar0u3TGAEwl2mR9XA&usqp=CAU";
+  final String urlOctagon =
+      "https://bolavip.com/__export/1585783464420/sites/bolavip/img/2020/04/01/71f46e9f612766243872c34fcde97038_crop1585782103611.jpg_1902800913.jpg";
+  final String urlBaronessa =
+      "https://www.lavozdelafrontera.com.mx/deportes/zfftgy-okdsc_6794.jpg/ALTERNATES/FREE_768/okDSC_6794.jpg";
+  final String urlAtlantis =
+      "https://2.bp.blogspot.com/-pNdD_Z7OTbM/UiyhxUgQIjI/AAAAAAAAPw0/ccJQHZN4-sQ/s1600/atlantis7.jpg";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,7 +51,17 @@ class AllFighters extends StatelessWidget {
               ),
             ),
           ),
-          figthersTable(),
+          Column(
+            children: [
+              Expanded(
+                child: Container(),
+              ),
+              figthersTable(),
+              Expanded(
+                child: Container(),
+              ),
+            ],
+          ),
         ],
       ),
     );
@@ -58,21 +74,32 @@ class AllFighters extends StatelessWidget {
           children: [
             Container(
               margin: EdgeInsets.all(10),
-              height: 125,
-              width: 60,
+              height: 140,
+              width: 120,
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Container(
-                  width: 100,
-                  height: 125,
+                  height: 140,
+                  width: 120,
                   child: Stack(
                     children: [
                       FadeInImage.assetNetwork(
                         placeholder: "assets/Gifs/loading.gif",
                         image: urlHeroina,
-                        width: 120,
                         height: 140,
+                        width: 120,
                         fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 115,
+                        left: 10,
+                        child: Text(
+                          'Heroina',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.yellow[50],
+                              fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ],
                   ),
@@ -81,15 +108,71 @@ class AllFighters extends StatelessWidget {
             ),
             Container(
               margin: EdgeInsets.all(10),
-              height: 125,
-              width: 60,
-              color: Colors.blue,
+              height: 140,
+              width: 120,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Container(
+                  width: 120,
+                  height: 140,
+                  child: Stack(
+                    children: [
+                      FadeInImage.assetNetwork(
+                        placeholder: "assets/Gifs/loading.gif",
+                        image: urlMistico,
+                        width: 120,
+                        height: 140,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 115,
+                        left: 10,
+                        child: Text(
+                          'Mistico',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.yellow[50],
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
             Container(
               margin: EdgeInsets.all(10),
-              height: 125,
-              width: 60,
-              color: Colors.blue,
+              height: 140,
+              width: 120,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Container(
+                  width: 120,
+                  height: 140,
+                  child: Stack(
+                    children: [
+                      FadeInImage.assetNetwork(
+                        placeholder: "assets/Gifs/loading.gif",
+                        image: urlLaHiedra,
+                        width: 120,
+                        height: 140,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 115,
+                        left: 10,
+                        child: Text(
+                          'La Hiedra',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.yellow[50],
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
           ],
         ),
@@ -97,21 +180,105 @@ class AllFighters extends StatelessWidget {
           children: [
             Container(
               margin: EdgeInsets.all(10),
-              height: 125,
-              width: 60,
-              color: Colors.blue,
+              height: 140,
+              width: 120,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Container(
+                  height: 140,
+                  width: 120,
+                  child: Stack(
+                    children: [
+                      FadeInImage.assetNetwork(
+                        placeholder: "assets/Gifs/loading.gif",
+                        image: urlParca,
+                        width: 120,
+                        height: 140,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 115,
+                        left: 10,
+                        child: Text(
+                          'La Parca',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.yellow[50],
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
             Container(
               margin: EdgeInsets.all(10),
-              height: 125,
-              width: 60,
-              color: Colors.blue,
+              height: 140,
+              width: 120,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Container(
+                  height: 140,
+                  width: 120,
+                  child: Stack(
+                    children: [
+                      FadeInImage.assetNetwork(
+                        placeholder: "assets/Gifs/loading.gif",
+                        image: urlPrincesaAzul,
+                        width: 120,
+                        height: 140,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 95,
+                        left: 10,
+                        child: Text(
+                          'Princesa \nAzul',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.yellow[50],
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
             Container(
               margin: EdgeInsets.all(10),
-              height: 125,
-              width: 60,
-              color: Colors.blue,
+              height: 140,
+              width: 120,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Container(
+                  height: 140,
+                  width: 120,
+                  child: Stack(
+                    children: [
+                      FadeInImage.assetNetwork(
+                        placeholder: "assets/Gifs/loading.gif",
+                        image: urlMascaraSagrada,
+                        width: 120,
+                        height: 140,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 95,
+                        left: 10,
+                        child: Text(
+                          'Mascara \nSagrada',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.yellow[50],
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
           ],
         ),
@@ -119,21 +286,105 @@ class AllFighters extends StatelessWidget {
           children: [
             Container(
               margin: EdgeInsets.all(10),
-              height: 125,
-              width: 60,
-              color: Colors.blue,
+              height: 140,
+              width: 120,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Container(
+                  height: 140,
+                  width: 120,
+                  child: Stack(
+                    children: [
+                      FadeInImage.assetNetwork(
+                        placeholder: "assets/Gifs/loading.gif",
+                        image: urlKeira,
+                        width: 120,
+                        height: 140,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 115,
+                        left: 10,
+                        child: Text(
+                          'Keira',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.yellow[50],
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
             Container(
               margin: EdgeInsets.all(10),
-              height: 125,
-              width: 60,
-              color: Colors.blue,
+              height: 140,
+              width: 120,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Container(
+                  height: 140,
+                  width: 120,
+                  child: Stack(
+                    children: [
+                      FadeInImage.assetNetwork(
+                        placeholder: "assets/Gifs/loading.gif",
+                        image: urlDosCaras,
+                        width: 120,
+                        height: 140,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 115,
+                        left: 10,
+                        child: Text(
+                          'Dos Caras',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.yellow[50],
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
             Container(
               margin: EdgeInsets.all(10),
-              height: 125,
-              width: 60,
-              color: Colors.blue,
+              height: 140,
+              width: 120,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Container(
+                  height: 140,
+                  width: 120,
+                  child: Stack(
+                    children: [
+                      FadeInImage.assetNetwork(
+                        placeholder: "assets/Gifs/loading.gif",
+                        image: urlLadyFlammer,
+                        width: 120,
+                        height: 140,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 95,
+                        left: 10,
+                        child: Text(
+                          'Lady \nFlammer',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.yellow[50],
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
           ],
         ),
@@ -141,21 +392,105 @@ class AllFighters extends StatelessWidget {
           children: [
             Container(
               margin: EdgeInsets.all(10),
-              height: 125,
-              width: 60,
-              color: Colors.blue,
+              height: 140,
+              width: 120,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Container(
+                  height: 140,
+                  width: 120,
+                  child: Stack(
+                    children: [
+                      FadeInImage.assetNetwork(
+                        placeholder: "assets/Gifs/loading.gif",
+                        image: urlOctagon,
+                        width: 120,
+                        height: 140,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 115,
+                        left: 10,
+                        child: Text(
+                          'Octagon',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.yellow[50],
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
             Container(
               margin: EdgeInsets.all(10),
-              height: 125,
-              width: 60,
-              color: Colors.blue,
+              height: 140,
+              width: 120,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Container(
+                  height: 140,
+                  width: 120,
+                  child: Stack(
+                    children: [
+                      FadeInImage.assetNetwork(
+                        placeholder: "assets/Gifs/loading.gif",
+                        image: urlBaronessa,
+                        width: 120,
+                        height: 140,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 115,
+                        left: 10,
+                        child: Text(
+                          'Baronessa',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.yellow[50],
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
             Container(
               margin: EdgeInsets.all(10),
-              height: 125,
-              width: 60,
-              color: Colors.blue,
+              height: 140,
+              width: 120,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(10),
+                child: Container(
+                  height: 140,
+                  width: 120,
+                  child: Stack(
+                    children: [
+                      FadeInImage.assetNetwork(
+                        placeholder: "assets/Gifs/loading.gif",
+                        image: urlAtlantis,
+                        width: 120,
+                        height: 140,
+                        fit: BoxFit.cover,
+                      ),
+                      Positioned(
+                        top: 115,
+                        left: 10,
+                        child: Text(
+                          'Atlantis',
+                          style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.yellow[50],
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
           ],
         ),
