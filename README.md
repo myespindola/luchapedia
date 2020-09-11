@@ -1,6 +1,6 @@
-# luchapedia
+# Luchapedia
 
-A new Flutter project.
+Wiki de luchadores
 
 ## Curso Flutter Laboratorio de Multimedia
 
